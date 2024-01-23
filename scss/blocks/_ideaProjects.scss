@@ -1,0 +1,59 @@
+.idea__row {
+  display: flex;
+  align-items: center;
+  column-gap: 32px;
+}
+
+.row__elem_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 24px 24px 0 0;
+  padding: 83px 67px;
+
+  &_one {
+    background-color: $colorDashboardBGOne;
+  }
+
+  &_two {
+    background-color: $colorDashboardBGTwo;
+  }
+}
+
+.row__elem_text {
+  background-color: $colorWhite;
+  border-radius: 0 0 24px 24px;
+  padding: 48px 48px 74px;
+}
+
+.row__elem_text_title {
+  margin-bottom: 8px;
+}
+
+/* HOVER EFFECTS */
+
+.row__elem {
+    transition: transform 0.2s linear;
+}
+
+.row__elem:hover .row__elem_image_one{
+    box-shadow: 0 0 5px $colorAccentOrange;
+}
+
+.row__elem:hover .row__elem_text_one{
+    box-shadow: 0 0 5px $colorAccentOrange;
+}
+
+.row__elem:hover .row__elem_image_two{
+    box-shadow: 0 0 5px $colorAccentBlue;
+}
+
+.row__elem:hover .row__elem_text_two{
+    box-shadow: 0 0 5px $colorAccentBlue;
+}
+
+.row__elem:hover {
+    transform: scale(1.03);
+}
+

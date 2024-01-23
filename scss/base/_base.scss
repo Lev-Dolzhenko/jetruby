@@ -1,0 +1,67 @@
+body {
+  font-family: $mainFont;
+  // color: ;
+  font-size: 16px;
+  background: radial-gradient(
+    114.37% 114.53% at 20.49% 12.79%,
+    #fff 0%,
+    rgba(228, 231, 233, 0.5) 100%
+  );
+}
+
+a {
+  transition: color 0.2s linear;
+
+  &:hover {
+    // color: $fff;
+  }
+}
+
+.container {
+  max-width: 1470px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  &_section {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+}
+
+.none {
+  display: none !important;
+}
+
+.titleH1 {
+  // font-size: clamp();
+  // font-weight: ;
+  // line-height: ;
+}
+
+.title2 {
+  color: $colorTitle;
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 78px;
+  letter-spacing: -0.5px;
+
+  &_idea {
+    max-width: 467px;
+  }
+}
+
+.title3 {
+  color: $colorTitle;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: -0.15px;
+}
+
+.subtitleP {
+  color: $colorSubtitle;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 140.7%;
+}

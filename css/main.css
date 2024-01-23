@@ -1,0 +1,488 @@
+@charset "UTF-8";
+/* FONTS */
+@import './../fonts/FuturaPT/stylesheet.css';
+/* FONTS */
+/* BASE */
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+/*FONTS*/
+/*FONTS*/
+/*COLORS*/
+/*COLORS*/
+/*MEDIA*/
+/*MEDIA*/
+body {
+  font-family: "Futura PT";
+  font-size: 16px;
+  background: radial-gradient(114.37% 114.53% at 20.49% 12.79%, #fff 0%, rgba(228, 231, 233, 0.5) 100%);
+}
+
+a {
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+.container {
+  max-width: 1470px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container_section {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.none {
+  display: none !important;
+}
+
+.title2 {
+  color: #333;
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 78px;
+  letter-spacing: -0.5px;
+}
+.title2_idea {
+  max-width: 467px;
+}
+
+.title3 {
+  color: #333;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: -0.15px;
+}
+
+.subtitleP {
+  color: #4f4f4f;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 140.7%;
+}
+
+.nav-icon-btn {
+  --time: 0.1s;
+  --width: 40px;
+  --height: 30px;
+  --line-height: 1px;
+  --line-margin: 2;
+  --color: #000;
+  height: var(--height);
+  width: var(--width);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-icon {
+  position: relative;
+  width: var(--width);
+  height: var(--line-height);
+  background-color: var(--color);
+}
+
+.nav-icon::before,
+.nav-icon::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: var(--width);
+  height: var(--line-height);
+  background-color: var(--color);
+  -webkit-transition: top var(--time) linear var(--time), -webkit-transform var(--time) ease-in;
+  transition: top var(--time) linear var(--time), -webkit-transform var(--time) ease-in;
+  transition: transform var(--time) ease-in, top var(--time) linear var(--time);
+  transition: transform var(--time) ease-in, top var(--time) linear var(--time), -webkit-transform var(--time) ease-in;
+}
+
+.nav-icon::before {
+  top: calc(var(--line-height) * -8);
+}
+
+.nav-icon::after {
+  top: calc(var(--line-height) * 8);
+}
+
+.nav-icon.nav-icon--active {
+  background-color: transparent;
+}
+
+.nav-icon.nav-icon--active::before,
+.nav-icon.nav-icon--active::after {
+  top: 0;
+  -webkit-transition: top var(--time) linear, -webkit-transform var(--time) ease-in var(--time);
+  transition: top var(--time) linear, -webkit-transform var(--time) ease-in var(--time);
+  transition: top var(--time) linear, transform var(--time) ease-in var(--time);
+  transition: top var(--time) linear, transform var(--time) ease-in var(--time), -webkit-transform var(--time) ease-in var(--time);
+}
+
+.nav-icon.nav-icon--active::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.nav-icon.nav-icon--active::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+/* BASE */
+/* BLOCK */
+.header {
+  padding: 36px 0;
+}
+
+.header__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__row__nav {
+  margin: 0 auto 0 73px;
+}
+
+.row__nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 33px;
+     -moz-column-gap: 33px;
+          column-gap: 33px;
+}
+
+.nav__item {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear; /* Добавляем анимацию изменения положения */
+}
+.nav__item:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px); /* Поднимаем текст на 3px при наведении */
+}
+
+.nav__link {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #4f4f4f !important;
+  position: relative;
+}
+.nav__link::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #ff4000;
+  position: absolute;
+  left: -134px;
+  bottom: -2px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.nav__link:hover::before {
+  left: 0;
+}
+
+.header__row__button button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #FF561D;
+  border-radius: 20px;
+  padding: 27px 38px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  -webkit-transition: background-color 0.2s linear, -webkit-transform 0.2s linear;
+  transition: background-color 0.2s linear, -webkit-transform 0.2s linear;
+  transition: background-color 0.2s linear, transform 0.2s linear;
+  transition: background-color 0.2s linear, transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+.header__row__button button:hover {
+  background-color: #ff4000;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.info {
+  position: relative;
+  overflow-x: clip;
+}
+
+.info__wrapper-title h1 {
+  color: #333;
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 101.7%;
+  max-width: 718px;
+  margin-bottom: 48px;
+}
+
+.info__wrapper-subtitle p {
+  color: #4f4f4f;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 140.7%;
+  max-width: 560px;
+  margin-bottom: 58px;
+}
+
+.info__wrapper-button button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #4C40F7;
+  border-radius: 20px;
+  padding: 27px 56px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  -webkit-transition: background-color 0.2s linear, -webkit-transform 0.2s linear;
+  transition: background-color 0.2s linear, -webkit-transform 0.2s linear;
+  transition: background-color 0.2s linear, transform 0.2s linear;
+  transition: background-color 0.2s linear, transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+.info__wrapper-button button:hover {
+  background-color: #2718ff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.info__wrapper_circle {
+  position: absolute;
+  right: -27.7777777778%;
+  top: -35.5660377358%;
+  z-index: -3;
+}
+
+.info__wrapper_laptop {
+  position: absolute;
+  right: -6.3888888889%;
+  top: -5.0943396226%;
+  z-index: -1;
+}
+
+.info__wrapper_circles {
+  position: absolute;
+  right: 21.4583333333%;
+  top: 57.358490566%;
+  z-index: -1;
+}
+
+.idea {
+  margin-top: 150px;
+}
+
+.idea__subtitle_accent {
+  color: #4C40F7;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 28px;
+}
+
+.idea__title {
+  margin-bottom: 36px;
+}
+
+.idea__subtitle {
+  color: #4f4f4f;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 140.7%;
+  margin-bottom: 108px;
+}
+
+.idea__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
+}
+
+.row__elem_image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 24px 24px 0 0;
+  padding: 83px 67px;
+}
+.row__elem_image_one {
+  background-color: #FFF3EB;
+}
+.row__elem_image_two {
+  background-color: #EDEDFF;
+}
+
+.row__elem_text {
+  background-color: #fff;
+  border-radius: 0 0 24px 24px;
+  padding: 48px 48px 74px;
+}
+
+.row__elem_text_title {
+  margin-bottom: 8px;
+}
+
+/* HOVER EFFECTS */
+.row__elem {
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.row__elem:hover .row__elem_image_one {
+  -webkit-box-shadow: 0 0 5px #FF561D;
+          box-shadow: 0 0 5px #FF561D;
+}
+
+.row__elem:hover .row__elem_text_one {
+  -webkit-box-shadow: 0 0 5px #FF561D;
+          box-shadow: 0 0 5px #FF561D;
+}
+
+.row__elem:hover .row__elem_image_two {
+  -webkit-box-shadow: 0 0 5px #4C40F7;
+          box-shadow: 0 0 5px #4C40F7;
+}
+
+.row__elem:hover .row__elem_text_two {
+  -webkit-box-shadow: 0 0 5px #4C40F7;
+          box-shadow: 0 0 5px #4C40F7;
+}
+
+.row__elem:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+/* BLOCK */

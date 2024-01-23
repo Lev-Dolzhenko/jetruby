@@ -1,0 +1,27 @@
+/* FONTS */
+
+@import './../fonts/FuturaPT/stylesheet.css';
+
+
+/* FONTS */
+
+/* BASE */
+
+@import './base/animations';
+@import './base/mixins';
+@import './base/reset';
+@import './base/vars';
+@import './base/base';
+@import './base/navIcon';
+
+/* BASE */
+
+/* BLOCK */
+
+@import './blocks/header';
+@import './blocks//info';
+@import './blocks/idea';
+@import './blocks/ideaProjects';
+@import './blocks/animationText';
+
+/* BLOCK */
