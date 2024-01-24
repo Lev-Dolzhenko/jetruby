@@ -4,6 +4,10 @@
   column-gap: 32px;
 }
 
+.row__elem:hover {
+  cursor: pointer;
+}
+
 .row__elem_image {
   display: flex;
   align-items: center;

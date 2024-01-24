@@ -51,8 +51,16 @@
     z-index: 10;
 }
 
+.wrapper__button_next:hover {
+  cursor: pointer;
+}
+
 .wrapper__button_next:hover ~ .wrapper__ellipse {
     left: 65px;
+}
+
+.wrapper__button_prev:hover {
+  cursor: pointer;
 }
 
 .wrapper__button_prev:hover ~ .wrapper__ellipse {

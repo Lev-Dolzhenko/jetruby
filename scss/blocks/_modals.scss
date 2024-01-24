@@ -1,0 +1,88 @@
+.capabilities__modal_one {
+}
+.capabilities__modal_two {
+}
+.capabilities__modal_two {
+}
+.capabilities__modal_four {
+}
+
+.capabilities__modal {
+  border-radius: 40px;
+  border: 1px solid var(--e-3-e-6-e-9, #e3e6e9);
+  background: var(--ffffff, #fff);
+
+  max-width: 582px;
+
+  padding: 70px;
+}
+
+.modal_subtitle_accent {
+  color: $colorSubtitle;
+  font-size: 20px;
+  font-weight: 450;
+  line-height: 30px;
+  letter-spacing: -0.5px;
+
+  margin-bottom: 30px;
+}
+
+.modal__wrapper {
+  position: relative;
+}
+
+.modal_close {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  path {
+    stroke: #ababab;
+    transition: all 0.2s linear;
+  }
+
+  &:hover {
+    path {
+      stroke: $colorAccentBlue;
+    }
+    cursor: pointer;
+  }
+}
+
+.modal_title {
+  color: $colorTitleCard;
+  font-size: 64px;
+  font-weight: 450;
+  line-height: 64px;
+  letter-spacing: -0.5px;
+
+  margin-bottom: 30px;
+}
+
+.modal_subtitle {
+  color: $colorSubtitle;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+/* ------------------------- */
+
+.advance__modal {
+  border-radius: 40px;
+  border: 1px solid var(--e-3-e-6-e-9, #e3e6e9);
+  background: var(--ffffff, #fff);
+
+  max-width: 582px;
+
+  padding: 40px 70px 70px;
+}
+
+.advance__modal_subtitle_accent {
+    color: $colorAccentBlue;
+}
+
+.advance__modal_title {
+    margin-bottom: 20px;
+}

@@ -193,6 +193,23 @@ a {
   color: #939396;
   max-width: 325px;
 }
+.subtitleP_advance {
+  color: #333;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 140.7%;
+}
+.subtitleP_footer {
+  color: var(--Gray-2, #4f4f4f);
+  text-align: center;
+  /* p1 */
+  font-family: "Futura PT";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140.7%; /* 33.768px */
+}
 
 .subtitle_accent {
   color: #4C40F7;
@@ -203,6 +220,9 @@ a {
 }
 .subtitle_accent_process {
   color: #fff;
+}
+.subtitle_accent_advance {
+  text-align: center;
 }
 
 .nav-icon-btn {
@@ -469,6 +489,10 @@ a {
           column-gap: 32px;
 }
 
+.row__elem:hover {
+  cursor: pointer;
+}
+
 .row__elem_image {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -725,12 +749,269 @@ a {
   z-index: 10;
 }
 
+.wrapper__button_next:hover {
+  cursor: pointer;
+}
+
 .wrapper__button_next:hover ~ .wrapper__ellipse {
   left: 65px;
 }
 
+.wrapper__button_prev:hover {
+  cursor: pointer;
+}
+
 .wrapper__button_prev:hover ~ .wrapper__ellipse {
   left: 8px;
+}
+
+.advance {
+  padding: 150px 0;
+}
+
+.advance__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 100px;
+  margin-top: 164px;
+}
+
+.advance__wrapper_elem {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.wrapper_elem_text {
+  -ms-grid-column-align: right;
+      justify-self: right;
+  max-width: 517px;
+}
+
+.elem_text_title {
+  margin-bottom: 36px;
+}
+
+.elem_text_subtitle {
+  margin-bottom: 61px;
+}
+.elem_text_subtitle p {
+  text-align: left;
+}
+
+.elem_text_button button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #5956E9;
+  border-radius: 20px;
+  padding: 29px 86px 27px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  -webkit-transition: -webkit-transform 0.2s linear, -webkit-box-shadow 0.2s linear;
+  transition: -webkit-transform 0.2s linear, -webkit-box-shadow 0.2s linear;
+  transition: transform 0.2s linear, box-shadow 0.2s linear;
+  transition: transform 0.2s linear, box-shadow 0.2s linear, -webkit-transform 0.2s linear, -webkit-box-shadow 0.2s linear;
+}
+.elem_text_button button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0 0 5px #000;
+          box-shadow: 0 0 5px #000;
+}
+
+.wrapper__elem_photos {
+  position: relative;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.wrapper__elem_image {
+  border-radius: 10px;
+}
+
+.wrapper__elem_subimage {
+  position: absolute;
+  border-radius: 14px;
+  -webkit-box-shadow: -8px 8px 20px 20px rgba(28, 28, 28, 0.1);
+          box-shadow: -8px 8px 20px 20px rgba(28, 28, 28, 0.1);
+}
+
+#subOne {
+  right: 44%;
+  bottom: -8%;
+}
+
+#subTwo {
+  right: -6%;
+  bottom: -9%;
+}
+
+#subThree {
+  right: 97px;
+  bottom: -110px;
+}
+
+.capabilities__modal {
+  border-radius: 40px;
+  border: 1px solid var(--e-3-e-6-e-9, #e3e6e9);
+  background: var(--ffffff, #fff);
+  max-width: 582px;
+  padding: 70px;
+}
+
+.modal_subtitle_accent {
+  color: #4f4f4f;
+  font-size: 20px;
+  font-weight: 450;
+  line-height: 30px;
+  letter-spacing: -0.5px;
+  margin-bottom: 30px;
+}
+
+.modal__wrapper {
+  position: relative;
+}
+
+.modal_close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.modal_close path {
+  stroke: #ababab;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.modal_close:hover {
+  cursor: pointer;
+}
+.modal_close:hover path {
+  stroke: #4C40F7;
+}
+
+.modal_title {
+  color: #292930;
+  font-size: 64px;
+  font-weight: 450;
+  line-height: 64px;
+  letter-spacing: -0.5px;
+  margin-bottom: 30px;
+}
+
+.modal_subtitle {
+  color: #4f4f4f;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+/* ------------------------- */
+.advance__modal {
+  border-radius: 40px;
+  border: 1px solid var(--e-3-e-6-e-9, #e3e6e9);
+  background: var(--ffffff, #fff);
+  max-width: 582px;
+  padding: 40px 70px 70px;
+}
+
+.advance__modal_subtitle_accent {
+  color: #4C40F7;
+}
+
+.advance__modal_title {
+  margin-bottom: 20px;
+}
+
+.footer {
+  padding: 129px 0 161px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+}
+
+.footer__title {
+  max-width: 593px;
+  margin: 0 auto 36px;
+}
+
+.footer__subtitle {
+  margin-bottom: 113px;
+}
+
+.footer__logo_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 130px;
+}
+
+.footer__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer__button button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #4C40F7;
+  border-radius: 20px;
+  padding: 27px 56px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  -webkit-transition: background-color 0.2s linear, -webkit-transform 0.2s linear;
+  transition: background-color 0.2s linear, -webkit-transform 0.2s linear;
+  transition: background-color 0.2s linear, transform 0.2s linear;
+  transition: background-color 0.2s linear, transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+.footer__button button:hover {
+  background-color: #2718ff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 /* BLOCK */
