@@ -1,0 +1,59 @@
+.capabilities__grid__card {
+  background-color: $colorWhite;
+  border: 1px solid $colorBorderCard;
+  border-radius: 40px;
+
+  padding: 80px 80px 70px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $colorAccentCard;
+  }
+
+  &:hover .title5_capabilities {
+    color: $colorWhite;
+  }
+
+  &:hover .subtitleP_grid_card {
+    color: $colorWhite;
+  }
+
+  &:hover .grid__card_button button {
+    background-color: $colorWhite;
+    color: $colorAccentCard
+  }
+}
+
+.grid__card_title {
+    max-width: 318px;
+}
+
+.grid__card_subtitle {
+    max-width: 318px;
+}
+
+.grid__card_button {
+    width: fit-content;
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $colorAccentCard;
+    border-radius: 20px;
+    padding: 29px 86px 27px;
+
+    color: $colorWhite;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+
+    transition: transform 0.2s linear, box-shadow 0.2s linear;
+  }
+
+  button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #000;
+  }
+}

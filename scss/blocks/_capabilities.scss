@@ -1,0 +1,36 @@
+.capabilities {
+  margin-top: 245px;
+}
+
+.capabilities__subtitle_accent {
+  position: relative;
+
+  text-align: center;
+
+  &::before {
+    content: url(./../../content/main/capabilities/elipse.png);
+    position: absolute;
+    left: 0;
+    bottom: -239px;
+    z-index: -1;
+  }
+}
+
+.capabilities__title {
+  text-align: center;
+}
+
+.capabilities__subtitle {
+  text-align: center;
+}
+
+.capabilities__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 500px);
+
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 86px;
+}

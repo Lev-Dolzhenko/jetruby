@@ -1,0 +1,60 @@
+.container_process {
+  position: relative;
+}
+
+.process__swipper {
+  margin-top: 140px;
+  margin-right: unset;
+  margin-left: 268px !important;
+  max-width: 770px;
+}
+
+.swipper__wrapper_button {
+  position: absolute;
+  left: calc(18 * 100% / 1040);
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.slider_image {
+  margin-bottom: 36px;
+}
+.slider_title {
+  margin-bottom: 31px;
+}
+
+.swipper__wrapper_button {
+  position: relative;
+}
+
+.wrapper__ellipse {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  position: absolute;
+  left: 114px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s linear;
+}
+
+.wrapper__button_prev {
+    z-index: 10;
+}
+
+.wrapper__button_next {
+    z-index: 10;
+}
+
+.wrapper__button_next:hover ~ .wrapper__ellipse {
+    left: 65px;
+}
+
+.wrapper__button_prev:hover ~ .wrapper__ellipse {
+    left: 8px;
+}

@@ -33,10 +33,6 @@
 
 /* HOVER EFFECTS */
 
-.row__elem {
-    transition: transform 0.2s linear;
-}
-
 .row__elem:hover .row__elem_image_one{
     box-shadow: 0 0 5px $colorAccentOrange;
 }
@@ -53,7 +49,4 @@
     box-shadow: 0 0 5px $colorAccentBlue;
 }
 
-.row__elem:hover {
-    transform: scale(1.03);
-}
 

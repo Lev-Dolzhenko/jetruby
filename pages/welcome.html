@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JETRUBY</title>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
     <script src="/scripts/script.js" defer></script>
     <link rel="stylesheet" href="/css/main.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -74,10 +82,12 @@
       </section>
       <section class="idea">
         <div class="container container_section">
-          <div class="idea__subtitle_accent">
-            <div data-aos="fade-right" data-aos-once="false" class="temp">
-              <span>Our cases</span>
-            </div>
+          <div
+            data-aos="fade-right"
+            data-aos-once="false"
+            class="idea__subtitle_accent subtitle_accent"
+          >
+            <span>Our cases</span>
           </div>
           <div class="idea__title">
             <h2 class="title2 title2_idea">Building ideas for your needs.</h2>
@@ -88,7 +98,7 @@
             </p>
           </div>
           <div class="idea__row">
-            <div class="row__elem">
+            <div data-aos="fade-right" class="row__elem">
               <div class="row__elem_image row__elem_image_one">
                 <img
                   src="/content/main/idea/dashboardOne.jpg"
@@ -106,7 +116,7 @@
                 </div>
               </div>
             </div>
-            <div class="row__elem">
+            <div data-aos="fade-left" class="row__elem">
               <div class="row__elem_image row__elem_image_two">
                 <img
                   src="/content/main/idea/dashboardTwo.jpg"
@@ -123,6 +133,197 @@
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="capabilities">
+        <div class="container container_section">
+          <div class="capabilities__subtitle_accent subtitle_accent">
+            Accent
+          </div>
+          <div class="capabilities__title">
+            <h2 class="title2 title2_capabilities">Our Capabilities.</h2>
+          </div>
+          <div class="capabilities__subtitle">
+            <p class="subtitleP subtitleP_capabilities">
+              We make your product simple and stable with these opportunities.
+            </p>
+          </div>
+          <div class="capabilities__grid">
+            <div data-aos="fade-right" class="capabilities__grid__card">
+              <div class="grid__card_title">
+                <h5 class="title5 title5_capabilities">Weather Data</h5>
+              </div>
+              <div class="grid__card_subtitle">
+                <p class="subtitleP subtitleP_grid_card">
+                  Monitoring and processing the data from Sencrop, Darksky and
+                  various other technologies that we operate daily.
+                </p>
+              </div>
+              <div class="grid__card_button">
+                <button>Learn more about it</button>
+              </div>
+            </div>
+            <div data-aos="fade-left" class="capabilities__grid__card">
+              <div class="grid__card_title">
+                <h5 class="title5 title5_capabilities">Weather Data</h5>
+              </div>
+              <div class="grid__card_subtitle">
+                <p class="subtitleP subtitleP_grid_card">
+                  Monitoring and processing the data from Sencrop, Darksky and
+                  various other technologies that we operate daily.
+                </p>
+              </div>
+              <div class="grid__card_button">
+                <button>Learn more about it</button>
+              </div>
+            </div>
+            <div data-aos="fade-right" class="capabilities__grid__card">
+              <div class="grid__card_title">
+                <h5 class="title5 title5_capabilities">Weather Data</h5>
+              </div>
+              <div class="grid__card_subtitle">
+                <p class="subtitleP subtitleP_grid_card">
+                  Monitoring and processing the data from Sencrop, Darksky and
+                  various other technologies that we operate daily.
+                </p>
+              </div>
+              <div class="grid__card_button">
+                <button>Learn more about it</button>
+              </div>
+            </div>
+            <div data-aos="fade-left" class="capabilities__grid__card">
+              <div class="grid__card_title">
+                <h5 class="title5 title5_capabilities">Weather Data</h5>
+              </div>
+              <div class="grid__card_subtitle">
+                <p class="subtitleP subtitleP_grid_card">
+                  Monitoring and processing the data from Sencrop, Darksky and
+                  various other technologies that we operate daily.
+                </p>
+              </div>
+              <div class="grid__card_button">
+                <button>Learn more about it</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="process">
+        <div class="container container_section container_process">
+          <div class="process__row">
+            <div class="subtitle_accent_process subtitle_accent">
+              <span>How we work</span>
+            </div>
+            <div class="process__wrapper_text">
+              <div class="wrapper_text_title">
+                <h2 class="title2 title2_process">
+                  Visualising our <br />
+                  processes.
+                </h2>
+              </div>
+              <div class="wrapper_text_subtitle">
+                <p class="subtitleP subtitleP_process">
+                  Your idea starts now, without any delays or unnecessary
+                  paperwork.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper mySwiper process__swipper">
+            <div class="swiper-wrapper process__swipper_wrapper">
+              <div class="swiper-slide swipper_wrapper_slide">
+                <div class="slider_image">
+                  <img
+                    src="/content/main/process/CodeReview.svg"
+                    alt="Code Review"
+                  />
+                </div>
+                <div class="slider_title">
+                  <h4 class="title4 title4_process">Code Review</h4>
+                </div>
+                <div class="slider_subtitle">
+                  <p class="subtitleP subtitleP__slider_process">
+                    If you have a codebase of you own, we do estimate the costs
+                    and scale the approximate team accordingly.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide swipper_wrapper_slide">
+                <div class="slider_image">
+                  <img
+                    src="/content/main/process/tasks.svg"
+                    alt="Code Review"
+                  />
+                </div>
+                <div class="slider_title">
+                  <h4 class="title4 title4_process">Code Review</h4>
+                </div>
+                <div class="slider_subtitle">
+                  <p class="subtitleP subtitleP__slider_process">
+                    If you have a codebase of you own, we do estimate the costs
+                    and scale the approximate team accordingly.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide swipper_wrapper_slide">
+                <div class="slider_image">
+                  <img
+                    src="/content/main/process/CodeReview.svg"
+                    alt="Code Review"
+                  />
+                </div>
+                <div class="slider_title">
+                  <h4 class="title4 title4_process">Code Review</h4>
+                </div>
+                <div class="slider_subtitle">
+                  <p class="subtitleP subtitleP__slider_process">
+                    If you have a codebase of you own, we do estimate the costs
+                    and scale the approximate team accordingly.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider_image">
+                  <img
+                    src="/content/main/process/tasks.svg"
+                    alt="Code Review"
+                  />
+                </div>
+                <div class="slider_title">
+                  <h4 class="title4 title4_process">Define & Estimate tasks</h4>
+                </div>
+                <div class="slider_subtitle">
+                  <p class="subtitleP subtitleP__slider_process">
+                    All of the business & technical questions will be carefully
+                    examined and estimated within the first week.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swipper__wrapper_button">
+            <div class="wrapper__button_prev">
+              <img
+                src="/content/main/process/buttonPrev.svg"
+                alt="prev slide"
+              />
+            </div>
+            <div class="wrapper__button_next">
+              <img
+                src="/content/main/process/buttonNext.svg"
+                alt="prev slide"
+              />
+            </div>
+            <span class="wrapper__ellipse"></span>
+          </div>
+          <div class="process__wrapper_circles">
+            <div data-aos="fade-left" class="wrapper__circles">
+              <img src="/content/main/process/circles.png" alt="circles" />
+            </div>
+            <div data-aos="fade-right" class="wrapper_arrow">
+              <img src="/content/main/process/circleArrow.svg" alt="arrow" />
             </div>
           </div>
         </div>

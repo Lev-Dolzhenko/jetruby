@@ -27,6 +27,10 @@ a {
     padding: 0 15px;
     margin: 0 auto;
   }
+
+  &_process {
+    z-index: 0;
+  }
 }
 
 .none {
@@ -49,6 +53,14 @@ a {
   &_idea {
     max-width: 467px;
   }
+
+  &_capabilities {
+    margin-bottom: 34px;
+  }
+
+  &_process {
+    color: $colorWhite;
+  }
 }
 
 .title3 {
@@ -59,9 +71,61 @@ a {
   letter-spacing: -0.15px;
 }
 
+.title4 {
+  color: $colorWhite;
+  font-size: 26px;
+  font-weight: 450;
+  line-height: 140%;
+  letter-spacing: -1.17px;
+}
+
+.title5 {
+  color: $colorTitleCard;
+  font-size: 72px;
+  font-weight: 450;
+  line-height: 78px;
+  letter-spacing: -0.5px;
+
+  &_capabilities {
+    margin-bottom: 47px;
+  }
+}
+
 .subtitleP {
   color: $colorSubtitle;
   font-size: 24px;
   font-weight: 400;
   line-height: 140.7%;
+
+  &_grid_card {
+    margin-bottom: 109px;
+  }
+
+  &_process {
+    color: $colorWhite;
+    opacity: 0.5;
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  &__slider_process {
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    line-height: 24px;
+    color: $colorSubtitle2;
+    max-width: 325px;
+  }
+}
+
+.subtitle_accent {
+  color: $colorAccentBlue;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+
+  margin-bottom: 28px;
+
+  &_process {
+    color: $colorWhite;
+  }
 }

@@ -1,0 +1,38 @@
+.process {
+    margin-top: 198px;
+
+    padding: 150px 0 140px;
+    background-color: $colorProcessBG;
+}
+
+.process__row {
+    display: flex;
+    align-items: flex-start;
+    row-gap: 28px;
+    column-gap: 147px;
+}
+
+.wrapper_text_title {
+    margin-bottom: 36px;
+}
+
+.process__wrapper_circles {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    z-index: -1;
+}
+
+.wrapper__circles {
+    position: relative;
+}
+
+.wrapper_arrow {
+    position: absolute;
+    left: calc(-195 * 100% / 1440);
+    top: calc(498 * 100% / 1060);
+
+
+    z-index: -1;
+}
