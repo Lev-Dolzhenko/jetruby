@@ -1,3 +1,6 @@
+const htmlOverlay = document.querySelector(".html");
+const overlay = document.querySelector(".overlay");
+
 /* BURGER MENU */
 
 const burgerButton = document.getElementById("burgerButton");
@@ -6,12 +9,36 @@ const navMobile = document.getElementById("navMobile");
 burgerButton.addEventListener("click", function () {
   navMobile.classList.toggle("open");
   navMobile.classList.toggle("none");
+  htmlOverlay.classList.toggle("hideScrollY");
   document.querySelector(".overlay").classList.toggle("open");
 });
 
 /* MODALS */
 
+function openModal(modalId) {
+  const modal = document.getElementById(modalId);
+  if (modal) {
+    modal.style.display = "block";
+    overlay.style.display = "block";
+    htmlOverlay.style.overflowY = "hidden";
+  }
+}
 
+// window.onclick = function(event) {
+//   if (event.target.classList.contains('modal')) {
+//     event.target.style.display = "none";
+//   }
+// }
+
+function closeModal(modalId) {
+  const modal = document.getElementById(modalId);
+  if (modal) {
+    modal.style.display = "none";
+    overlay.style.display = "none";
+    htmlOverlay.style.overflowY = "unset";
+  }
+  console.log("click");
+}
 /* INIT SWIPER */
 
 var swiper = new Swiper(".mySwiper", {

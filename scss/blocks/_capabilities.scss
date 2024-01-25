@@ -37,6 +37,7 @@
 
 @include mediaMobile {
   .capabilities__grid {
+    // align-self: center;
     grid-template-columns: minmax(300px, 500px);
   }
 }

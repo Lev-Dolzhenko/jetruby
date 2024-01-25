@@ -7,12 +7,13 @@
 .capabilities__modal_four {
 }
 
-.capabilities__modal {
+.capabilities__modal, .advance__modal {
   border-radius: 40px;
   border: 1px solid var(--e-3-e-6-e-9, #e3e6e9);
   background: var(--ffffff, #fff);
 
   max-width: 582px;
+  min-width: 290px;
 
   padding: 70px;
 
@@ -27,6 +28,7 @@
   z-index: 9999;
   display: none;
 }
+
 
 .modal_subtitle_accent {
   color: $colorSubtitle;
@@ -87,7 +89,7 @@
 
   max-width: 582px;
 
-  padding: 40px 70px 70px;
+  padding: clamp(1.25rem, 0.893rem + 1.79vw, 2.5rem) clamp(2.5rem, 1.964rem + 2.68vw, 4.375rem) clamp(2.5rem, 1.964rem + 2.68vw, 4.375rem);
 }
 
 .advance__modal_subtitle_accent {
@@ -107,9 +109,6 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 9998;
+  overflow-y: hidden;
   display: none;
-}
-
-#overlay.show {
-  display: block;
 }

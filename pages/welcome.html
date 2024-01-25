@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="html" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -197,7 +197,7 @@
                 </p>
               </div>
               <div class="grid__card_button">
-                <button>Learn more about it</button>
+                <button onclick="openModal('capabilities__modal_one')">Learn more about it</button>
               </div>
             </div>
             <div data-aos="fade-left" class="capabilities__grid__card">
@@ -211,7 +211,7 @@
                 </p>
               </div>
               <div class="grid__card_button">
-                <button>Learn more about it</button>
+                <button onclick="openModal('capabilities__modal_two')">Learn more about it</button>
               </div>
             </div>
             <div data-aos="fade-right" class="capabilities__grid__card">
@@ -226,7 +226,7 @@
                 </p>
               </div>
               <div class="grid__card_button">
-                <button>Learn more about it</button>
+                <button onclick="openModal('capabilities__modal_three')">Learn more about it</button>
               </div>
             </div>
             <div data-aos="fade-left" class="capabilities__grid__card">
@@ -240,11 +240,11 @@
                 </p>
               </div>
               <div class="grid__card_button">
-                <button>Learn more about it</button>
+                <button onclick="openModal('capabilities__modal_four')">Learn more about it</button>
               </div>
             </div>
           </div>
-          <div class="capabilities__modal capabilities__modal_one none">
+          <div id="capabilities__modal_one" class="modal capabilities__modal capabilities__modal_one">
             <div class="modal__wrapper">
               <div class="modal_subtitle_accent">
                 <span>Weather Data</span>
@@ -263,6 +263,7 @@
                 </p>
               </div>
               <svg
+              onclick="closeModal('capabilities__modal_one')"
                 class="modal_close"
                 width="14"
                 height="14"
@@ -279,7 +280,7 @@
               </svg>
             </div>
           </div>
-          <div class="capabilities__modal capabilities__modal_two none">
+          <div id="capabilities__modal_two" class="capabilities__modal capabilities__modal_two">
             <div class="modal__wrapper">
               <div class="modal_subtitle_accent">
                 <span>Satellite & Drones</span>
@@ -296,6 +297,7 @@
                 </p>
               </div>
               <svg
+              onclick="closeModal('capabilities__modal_two')"
                 class="modal_close"
                 width="14"
                 height="14"
@@ -312,7 +314,7 @@
               </svg>
             </div>
           </div>
-          <div class="capabilities__modal capabilities__modal_three none">
+          <div id="capabilities__modal_three" class="capabilities__modal capabilities__modal_three">
             <div class="modal__wrapper">
               <div class="modal_subtitle_accent">
                 <span>IoT</span>
@@ -328,6 +330,7 @@
                 </p>
               </div>
               <svg
+              onclick="closeModal('capabilities__modal_three')"
                 class="modal_close"
                 width="14"
                 height="14"
@@ -344,7 +347,7 @@
               </svg>
             </div>
           </div>
-          <div class="capabilities__modal capabilities__modal_four none">
+          <div id="capabilities__modal_four" class="capabilities__modal capabilities__modal_four">
             <div class="modal__wrapper">
               <div class="modal_subtitle_accent">
                 <span>Farm Maps</span>
@@ -359,6 +362,7 @@
                 </p>
               </div>
               <svg
+              onclick="closeModal('capabilities__modal_four')"
                 class="modal_close"
                 width="14"
                 height="14"
@@ -539,7 +543,7 @@
                   </p>
                 </div>
                 <div class="elem_text_button">
-                  <button>Learn more about it</button>
+                  <button onclick="openModal('advance__modal_one')">Learn more about it</button>
                 </div>
               </div>
               <div class="wrapper__elem_photos">
@@ -595,7 +599,7 @@
                   </p>
                 </div>
                 <div class="elem_text_button">
-                  <button>Learn more about it</button>
+                  <button onclick="openModal('advance__modal_two')">Learn more about it</button>
                 </div>
               </div>
             </div>
@@ -622,7 +626,7 @@
                   </p>
                 </div>
                 <div class="elem_text_button">
-                  <button>Learn more about it</button>
+                  <button onclick="openModal('advance__modal_three')">Learn more about it</button>
                 </div>
               </div>
               <div class="wrapper__elem_photos">
@@ -642,7 +646,7 @@
             </div>
           </div>
         </div>
-        <div class="advance__modal advance__modal_one none">
+        <div id="advance__modal_one" class="advance__modal advance__modal_one">
           <div class="modal__wrapper">
             <div class="modal_subtitle_accent advance__modal_subtitle_accent">
               <span>Indoor vertical farming</span>
@@ -664,6 +668,7 @@
               </p>
             </div>
             <svg
+            onclick="closeModal('advance__modal_one')"
               class="modal_close"
               width="14"
               height="14"
@@ -680,7 +685,7 @@
             </svg>
           </div>
         </div>
-        <div class="advance__modal advance__modal_two none">
+        <div id="advance__modal_two" class="advance__modal advance__modal_two">
           <div class="modal__wrapper">
             <div class="modal_subtitle_accent advance__modal_subtitle_accent">
               <span>Crop Fields Solutions.</span>
@@ -702,6 +707,7 @@
               </p>
             </div>
             <svg
+            onclick="closeModal('advance__modal_two')"
               class="modal_close"
               width="14"
               height="14"
@@ -718,7 +724,7 @@
             </svg>
           </div>
         </div>
-        <div class="advance__modal advance__modal_three none">
+        <div id="advance__modal_three" class="advance__modal advance__modal_three">
           <div class="modal__wrapper">
             <div class="modal_subtitle_accent advance__modal_subtitle_accent">
               <span>Animal Husbandary Technologies</span>
@@ -740,6 +746,7 @@
               </p>
             </div>
             <svg
+            onclick="closeModal('advance__modal_three')"
               class="modal_close"
               width="14"
               height="14"
