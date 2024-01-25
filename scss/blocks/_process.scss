@@ -1,8 +1,9 @@
 .process {
     margin-top: 198px;
 
-    padding: 150px 0 140px;
+    padding: clamp(4.375rem, 2.946rem + 7.14vw, 9.375rem) 0 clamp(4.375rem, 2.946rem + 7.14vw, 9.375rem);
     background-color: $colorProcessBG;
+
 }
 
 .process__row {
@@ -13,7 +14,7 @@
 }
 
 .wrapper_text_title {
-    margin-bottom: 36px;
+    margin-bottom: clamp(1rem, 0.643rem + 1.79vw, 2.25rem);
 }
 
 .process__wrapper_circles {
@@ -35,4 +36,11 @@
 
 
     z-index: -1;
+}
+
+@include mediaMobile {
+    .process__row {
+        flex-direction: column;
+        align-items: center ;
+    }
 }

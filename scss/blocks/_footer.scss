@@ -1,5 +1,5 @@
 .footer {
-  padding: 129px 0 161px;
+  padding: clamp(3.75rem, 2.518rem + 6.16vw, 8.063rem) 0 clamp(5rem, 3.554rem + 7.23vw, 10.063rem);
 
   text-align: center;
   align-items: center;
@@ -11,20 +11,22 @@
 }
 .footer__title {
   max-width: 593px;
-  margin: 0 auto 36px;
+  margin: 0 auto clamp(0.625rem, 0.161rem + 2.32vw, 2.25rem);
   // margin-bottom: 36px;
 }
 
 .footer__subtitle {
-  margin-bottom: 113px;
+  margin-bottom: clamp(2.5rem, 1.196rem + 6.52vw, 7.063rem);
 }
 
 .footer__logo_row {
-  display: flex;
+  // display: flex;
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
   align-items: center;
   justify-content: space-between;
 
-  margin-bottom: 130px;
+  margin-bottom: clamp(4.375rem, 3.304rem + 5.36vw, 8.125rem);
 }
 .footer__button {
   display: flex;
@@ -37,7 +39,7 @@
 
     background-color: $colorAccentBlue;
     border-radius: 20px;
-    padding: 27px 56px;
+    padding: clamp(0.813rem, 0.563rem + 1.25vw, 1.688rem) 56px;
 
     color: $colorWhite;
     font-size: 20px;

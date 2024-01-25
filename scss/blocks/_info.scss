@@ -5,21 +5,20 @@
 
 .info__wrapper-title h1 {
   color: $colorTitle;
-  font-size: 80px;
+  font-size: clamp(2rem, 1.143rem + 4.29vw, 5rem);
   font-weight: 500;
   line-height: 101.7%;
 
   max-width: 718px;
-  margin-bottom: 48px;
 }
 .info__wrapper-subtitle p {
   color: $colorSubtitle;
-  font-size: 24px;
+  font-size: clamp(0.875rem, 0.696rem + 0.89vw, 1.5rem);
   font-weight: 400;
   line-height: 140.7%;
 
   max-width: 560px;
-  margin-bottom: 58px;
+  margin-bottom: clamp(1.875rem, 1.375rem + 2.5vw, 3.625rem);
 }
 .info__wrapper-button {
   button {
@@ -29,7 +28,7 @@
 
     background-color: $colorAccentBlue;
     border-radius: 20px;
-    padding: 27px 56px;
+    padding: clamp(0.813rem, 0.563rem + 1.25vw, 1.688rem) 56px;
 
     color: $colorWhite;
     font-size: 20px;
@@ -67,4 +66,10 @@
   top: calc(608 * 100% / 1060);
 
   z-index: -1;
+}
+
+@include mediaMobile {
+  .info__wrapper_circles {
+    display: none;
+  }
 }

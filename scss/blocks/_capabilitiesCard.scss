@@ -30,6 +30,8 @@
 
 .grid__card_subtitle {
     max-width: 318px;
+
+    margin-bottom:clamp(4.375rem, 3.679rem + 3.48vw, 6.813rem)
 }
 
 .grid__card_button {
@@ -55,5 +57,19 @@
   button:hover {
     transform: scale(1.1);
     box-shadow: 0 0 10px #000;
+  }
+}
+
+@include mediaMobile {
+  .capabilities__grid__card {
+    padding: 40px 30px 20px;
+  }
+
+  .grid__card_button {
+    width: 100%;
+    button {
+      width: 100%;
+      padding: clamp(0.625rem, 0.286rem + 1.7vw, 1.813rem) clamp(1.875rem, 0.875rem + 5vw, 5.375rem) clamp(0.75rem, 0.482rem + 1.34vw, 1.688rem)
+    }
   }
 }

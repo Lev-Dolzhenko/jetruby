@@ -19,10 +19,10 @@
 }
 
 .slider_image {
-  margin-bottom: 36px;
+  margin-bottom: clamp(1.25rem, 0.964rem + 1.43vw, 2.25rem);
 }
 .slider_title {
-  margin-bottom: 31px;
+  margin-bottom: clamp(1rem, 0.643rem + 1.79vw, 2.25rem);
 }
 
 .swipper__wrapper_button {
@@ -65,4 +65,17 @@
 
 .wrapper__button_prev:hover ~ .wrapper__ellipse {
     left: 8px;
+}
+
+@include mediaMobile { 
+  .process__swipper {
+    margin-left: 0 !important;
+    margin: 50px 0;
+  }
+
+  .swiper-slide {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
 }

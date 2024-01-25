@@ -17,7 +17,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
-  <body>
+  <body style="overflow-x: hidden">
+    <div class="overlay"></div>
     <header class="header">
       <div class="container">
         <div class="header__row">
@@ -31,7 +32,9 @@
               <li class="nav__item">
                 <a class="nav__link" href="#!"> Testimonials</a>
               </li>
-              <li class="nav__item"><a class="nav__link" href="#!">Blog</a></li>
+              <li class="nav__item">
+                <a class="nav__link" href="#!">Blog</a>
+              </li>
               <li class="nav__item">
                 <a class="nav__link" href="#!">Pricing for startups</a>
               </li>
@@ -43,6 +46,34 @@
           <div class="header__row__button">
             <button>Get ballpark estimate</button>
           </div>
+        </div>
+        <div class="header__row header__row_mobile">
+          <div class="header__row__logotype">
+            <a href="#!"
+              ><img src="./../content/header/logotype.svg" alt="jetruby"
+            /></a>
+          </div>
+          <nav id="navMobile" class="row__nav_mobile none">
+            <ul class="row__nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#!"> Testimonials</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#!">Blog</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#!">Pricing for startups</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#!">Pricing for SMB</a>
+              </li>
+            </ul>
+            <div class="header__row__button header__row__button__mobile">
+              <button>Get ballpark estimate</button>
+            </div>
+          </nav>
+          <input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
+          <label id="burgerButton" class="burger" for="burger-checkbox"></label>
         </div>
       </div>
     </header>

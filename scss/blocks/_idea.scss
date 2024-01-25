@@ -1,9 +1,9 @@
 .idea {
-  margin-top: 150px;
+  // margin-top: clamp(4.375rem, 2.946rem + 7.14vw, 9.375rem);
 }
 
 .idea__title {
-  margin-bottom: 36px;
+  margin-bottom: clamp(0.938rem, 0.563rem + 1.88vw, 2.25rem);
 }
 
 .idea__subtitle {
@@ -12,5 +12,5 @@
   font-weight: 400;
   line-height: 140.7%;
 
-  margin-bottom: 108px;
+  margin-bottom: clamp(3.125rem, 2.089rem + 5.18vw, 6.75rem);
 }

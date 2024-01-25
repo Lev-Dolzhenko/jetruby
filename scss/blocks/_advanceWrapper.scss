@@ -3,7 +3,7 @@
   flex-direction: column;
   row-gap: 100px;
 
-  margin-top: 164px;
+  margin-top:clamp(1.875rem, -0.518rem + 11.96vw, 10.25rem);
 }
 .advance__wrapper_elem {
   display: grid;
@@ -19,7 +19,7 @@
 }
 
 .elem_text_subtitle {
-  margin-bottom: 61px;
+  margin-bottom: clamp(1.875rem, 1.321rem + 2.77vw, 3.813rem);
 
   p {
     text-align: left;
@@ -80,4 +80,46 @@
 #subThree {
   right: 97px;
   bottom: -110px;
+}
+
+@include mediaMobile {
+  .advance__wrapper_elem {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .wrapper__elem_photos {
+    order: 1;
+  }
+
+  .wrapper_elem_text {
+    order: 2;
+  }
+
+  .wrapper__elem_subimage {
+    width: 130px;
+  }
+
+  #subOne {
+    right: -2%;
+  }
+
+  #subTwo {
+    right: 58%;
+  }
+
+  #subThree {
+    right: 93px;
+    top: 83%;
+  }
+
+  .elem_text_button {
+    width: 100%;
+    button {
+      padding: clamp(0.625rem, 0.286rem + 1.7vw, 1.813rem)
+        clamp(1.875rem, 0.875rem + 5vw, 5.375rem)
+        clamp(0.75rem, 0.482rem + 1.34vw, 1.688rem);
+        width: 100%;
+    }
+  }
 }

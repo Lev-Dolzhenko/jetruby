@@ -32,5 +32,11 @@
   align-items: center;
   justify-content: center;
 
-  margin-top: 86px;
+  margin-top: clamp(3.125rem, 2.482rem + 3.21vw, 5.375rem);
+}
+
+@include mediaMobile {
+  .capabilities__grid {
+    grid-template-columns: minmax(300px, 500px);
+  }
 }
