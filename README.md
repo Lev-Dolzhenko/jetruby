@@ -6,7 +6,7 @@ Jetruby
 
 - Methodology: BEM (Block-Element-Modifier)
 - Preprocessor: SCSS
-- Animation Library: GSAP (GreenSock Animation Platform)
+- Animation Library: AOS (Animate On Scroll Library)
 - Adaptive layout
 
 ## Project structure
